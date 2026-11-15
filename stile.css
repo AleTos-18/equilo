@@ -1,3 +1,4 @@
+/* Stile del sito di Equilo */
 :root { --sfondo: #f6fbf9; --testo: #12312c; --tenue: #4d6661; --accento: #006b5f; --riquadro: #dcefea; }
 @media (prefers-color-scheme: dark) { :root { --sfondo: #0f1a18; --testo: #e6f2ef; --tenue: #a3b8b3; --accento: #6fd9c6; --riquadro: #1b2b28; } }
 body { margin: 0; background: var(--sfondo); color: var(--testo); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
