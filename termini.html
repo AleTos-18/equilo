@@ -1,92 +1,29 @@
 <!doctype html>
-<html lang="it">
+<html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Termini di servizio – Terms of service – Condiciones del servicio – Equilo</title>
+<title>Equilo</title>
+<script>
+(function () {
+  var lingue = ["it", "en", "es", "fr", "de", "pt"];
+  var l = location.hash.slice(1, 3);
+  if (lingue.indexOf(l) < 0) {
+    l = "en";
+    var preferite = navigator.languages || [navigator.language || ""];
+    for (var i = 0; i < preferite.length; i++) {
+      var p = String(preferite[i]).slice(0, 2).toLowerCase();
+      if (lingue.indexOf(p) >= 0) { l = p; break; }
+    }
+  }
+  location.replace(l + "/termini.html");
+})();
+</script>
 <link rel="stylesheet" href="stile.css">
 </head>
 <body>
 <main>
-<p class="lingue"><a href="#it">Italiano</a> · <a href="#en">English</a> · <a href="#es">Español</a></p>
-
-<section id="it" lang="it">
-<h1>Termini di servizio di Equilo</h1>
-<p class="data">Ultimo aggiornamento: 15 novembre 2026</p>
-
-<h2>L'app</h2>
-<p>Equilo è un'app gratuita per tenere sotto controllo le proprie spese, sviluppata da AleTos (<a href="mailto:AleTos18Dev@gmail.com">AleTos18Dev@gmail.com</a>). Usandola accetti questi termini.</p>
-
-<h2>Uso personale</h2>
-<p>Puoi usare Equilo per gestire le tue finanze personali. Importa solo file e leggi solo notifiche che hai diritto di usare.</p>
-
-<h2>Nessuna consulenza</h2>
-<p>Equilo non è un servizio bancario e non è collegato alla tua banca. Budget, categorie, stime e avvisi sono calcolati dai dati che importi e possono essere incompleti o sbagliati: non costituiscono consulenza finanziaria. Per decisioni importanti fai riferimento ai documenti ufficiali della tua banca.</p>
-
-<h2>I tuoi dati</h2>
-<p>I dati restano sul tuo telefono, come descritto nell'<a href="privacy.html#it">informativa privacy</a>. Sei responsabile di conservarli: fai backup regolari e custodisci la password, che lo sviluppatore non può recuperare.</p>
-
-<h2>Garanzia e responsabilità</h2>
-<p>L'app è fornita "così com'è", senza garanzie di funzionamento continuo o privo di errori. Nei limiti consentiti dalla legge, lo sviluppatore non risponde di danni derivanti dall'uso dell'app o dalla perdita di dati. Restano salvi i diritti che la legge riconosce ai consumatori.</p>
-
-<h2>Modifiche</h2>
-<p>Questi termini possono essere aggiornati; la versione in vigore è sempre su questa pagina, con la data di aggiornamento.</p>
-
-<p><a href="./#it">← Torna a Equilo</a></p>
-</section>
-
-<hr>
-
-<section id="en" lang="en">
-<h1>Equilo terms of service</h1>
-<p class="data">Last updated: 15 November 2026</p>
-
-<h2>The app</h2>
-<p>Equilo is a free app to keep track of your spending, developed by AleTos (<a href="mailto:AleTos18Dev@gmail.com">AleTos18Dev@gmail.com</a>). By using it you accept these terms.</p>
-
-<h2>Personal use</h2>
-<p>You may use Equilo to manage your personal finances. Import only files, and read only notifications, that you are entitled to use.</p>
-
-<h2>No advice</h2>
-<p>Equilo is not a banking service and is not connected to your bank. Budgets, categories, estimates and alerts are calculated from the data you import and may be incomplete or wrong: they are not financial advice. For important decisions, rely on your bank's official documents.</p>
-
-<h2>Your data</h2>
-<p>Your data stays on your phone, as described in the <a href="privacy.html#en">privacy policy</a>. You are responsible for keeping it: make regular backups and keep your password safe, as the developer can't recover it.</p>
-
-<h2>Warranty and liability</h2>
-<p>The app is provided "as is", without warranty of uninterrupted or error-free operation. To the extent permitted by law, the developer is not liable for damages arising from the use of the app or from data loss. This does not affect your statutory rights as a consumer.</p>
-
-<h2>Changes</h2>
-<p>These terms may be updated; the version in force is always on this page, with the update date.</p>
-
-<p><a href="./#en">← Back to Equilo</a></p>
-</section>
-<hr>
-
-<section id="es" lang="es">
-<h1>Condiciones del servicio de Equilo</h1>
-<p class="data">Última actualización: 16 de noviembre de 2026</p>
-
-<h2>La app</h2>
-<p>Equilo es una app gratuita para controlar tus gastos, desarrollada por AleTos (<a href="mailto:AleTos18Dev@gmail.com">AleTos18Dev@gmail.com</a>). Al usarla aceptas estas condiciones.</p>
-
-<h2>Uso personal</h2>
-<p>Puedes usar Equilo para gestionar tus finanzas personales. Importa solo archivos, y lee solo notificaciones, que tengas derecho a usar.</p>
-
-<h2>Sin asesoramiento</h2>
-<p>Equilo no es un servicio bancario y no está conectada a tu banco. Los presupuestos, categorías, estimaciones y avisos se calculan con los datos que importas y pueden ser incompletos o incorrectos: no son asesoramiento financiero. Para decisiones importantes, consulta los documentos oficiales de tu banco.</p>
-
-<h2>Tus datos</h2>
-<p>Tus datos se quedan en tu teléfono, como se describe en la <a href="privacy.html#es">política de privacidad</a>. Eres responsable de conservarlos: haz copias de seguridad periódicas y guarda bien la contraseña, que el desarrollador no puede recuperar.</p>
-
-<h2>Garantía y responsabilidad</h2>
-<p>La app se ofrece "tal cual", sin garantía de funcionamiento continuo o sin errores. En la medida en que lo permita la ley, el desarrollador no responde de los daños derivados del uso de la app o de la pérdida de datos. Esto no afecta a los derechos que la ley reconoce a los consumidores.</p>
-
-<h2>Cambios</h2>
-<p>Estas condiciones pueden actualizarse; la versión vigente está siempre en esta página, con la fecha de actualización.</p>
-
-<p><a href="./#es">← Volver a Equilo</a></p>
-</section>
+<p class="lingue"><a href="it/termini.html" lang="it">Italiano</a> · <a href="en/termini.html" lang="en">English</a> · <a href="es/termini.html" lang="es">Español</a> · <a href="fr/termini.html" lang="fr">Français</a> · <a href="de/termini.html" lang="de">Deutsch</a> · <a href="pt/termini.html" lang="pt">Português</a></p>
 </main>
 </body>
 </html>
